@@ -14,18 +14,8 @@ const layout = () => {
            <Sidebar/>
            <div className="content-wrapper">
                 <section className="content-header">
-                <h1>
-                    Dashboard
-                    <small>Control panel</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="#"><i className="fa fa-dashboard"></i> Home</a></li>
-                    <li className="active">Dashboard</li>
-                </ol>
+                
                 </section>
-                <Switch>
-         <Route exact path='dashboard' component={Dashboard}></Route>
-      </Switch>
            </div>
     </div>
    )

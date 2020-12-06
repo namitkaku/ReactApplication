@@ -5,6 +5,8 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router';
 import Dashboard from './components/Dashboard';
+import AddCategory from './components/AddCategory';
+import ListCategory from './components/ListCategory';
 
 function App() {
   return (
@@ -13,18 +15,12 @@ function App() {
       <Sidebar />
       <div className="content-wrapper">
         <section className="content-header">
-          <h1>
-            Dashboard
-                  <small>Control panel</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i className="fa fa-dashboard"></i> Home</a></li>
-            <li className="active">Dashboard</li>
-          </ol>
+         
         </section>
         <Switch>
           <Route exact path='/' component={Dashboard}></Route>
-          <Route exact path='/demo' component={Demo}></Route>
+          <Route exact path='/add-category' component={AddCategory}></Route>
+          <Route exact path='/list-category' component={ListCategory}></Route>
         </Switch>
       </div>
     </div>
